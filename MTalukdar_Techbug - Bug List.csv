@@ -1,0 +1,45 @@
+Bug Id,Bug Title,Bug Description , Pre-requisities,Bug Steps,Priority, Expected Results,Actual Results,Pass /Fail,Browser/ Device Used,Screenshots & Attachments,,Test Executed By
+Id001,User Phone Number Field Allows More than 10 digits during Registration,"On the registration page of techshopbd.com, there is a bug in the phone number field validation. The system allows users to input more than 10 digits in the phone number field, which violates the expected limit for a standard phone number.",Tech Shop URL should be working,"1.  Open techshopbd.com. in chrome.
+2. Navigate to the registration page.
+3. Locate the phone number field.
+4. Enter more than 10 digits in the phone number field.
+5. Submit the registration form.",High,The phone number field should only allow the entry of exactly 10 digits.,"The system accepts more than 10 digits in the phone number field, violating the expected limit.",Fail,"Chrome
+Windows 11",https://drive.google.com/file/d/1Lp8qlIH51RmaOfBKUOWb1Hp6gb67j1Bg/view?usp=sharing,,Megha Talukdar
+Id002,"Misleading Validation Message on ""Forgot Password"" for Empty Email Field","On the ""Forgot Password"" section, there is a bug in the validation message when a user submits the form without entering any email address. The system displays a misleading message that says ""Account doesn't exist for this email,"" even though the issue is that no email address was entered.",Tech Shop URL should be working,"1. Open techshopbd.com.
+2. Navigate to the ""Forgot Password"" section.
+3. Leave the email address field blank.
+4. Click on the submit button.",Medium,"The validation message should indicate that the user needs to enter an email address.               ""Please enter a valid email address.""","The validation message incorrectly states, ""Account doesn't exist for this email.""",Fail,"Chrome
+Windows 11",https://drive.google.com/file/d/1Z7qBBikpc-ABvald9nZGyYGiq404cYiG/view?usp=sharing,,Megha Talukdar
+Id003,Incorrect Icon Displayed for Email Field on Sign-In Page,"On the sign-in page of techshopbd.com, there is a bug where the icon displayed next to the email field is incorrect. Instead of showing the email icon, it displays the phone number icon.",Tech Shop URL should be working,"1. Open techshopbd.com.
+2. Navigate to the sign-in page.
+3. Observe the icon next to the email field.",Medium,The icon displayed next to the email field should be the email icon.,The system incorrectly displays the phone number icon instead of the email icon next to the email field.,Fail,"Chrome
+Windows 11",https://drive.google.com/file/d/1X71FHyMD5LlZPX1p7yFsF8U49X1d8BdD/view?usp=sharing,,Megha Talukdar
+Id004,Consolidate Cash on Delivery Image Slider is not functioning,"On the registration and login pages of techshopbd.com, there is currently a slider displaying images related to cash on delivery.The slider should slide on clicking the slider points",Tech Shop URL should be working,"1. Remove the existing image slider component on the registration and login pages.
+2. Replace it with a single static image related to cash on delivery.
+3. Ensure that the new image is appropriately sized and fits well with the overall design of the pages.",Low,"Users will see a consistent, sliding image related to ""Cash on Delivery"" and other feature on the registration and login page.",There is a slider in the page and all the 3 slide there was a same COD image. The slider is not clicable and is not sliding on hover or clicking.,Fail,"Chrome
+Windows 11",https://drive.google.com/file/d/1bsD9ztA01NXVzkJv9cpwd61W1OWgrLD2/view?usp=sharing,,Megha Talukdar
+Id005,User phone number entered during registration allows negative fields,"On the registration page of techshopbd.com, there is a bug in the phone number field validation. The system allows users to input negative  digit in the phone number field, which violates the expected scenario for a standard phone number.",Tech Shop URL should be working,"1. Open techshopbd.com.
+2. Navigate to the registration page.
+3. Locate the phone number field.
+4. Enter ""-89765"" negative numbers in the phone number field.
+5. Submit the registration form.",High,"The phone number field should only allow the entry of positive digits from ""0"" and should not allow any negative field ""-21"".","The system accepts negative ""-21"" digits in the phone number field, violating the expected scenario",Fail,"Chrome
+Windows 11",https://drive.google.com/file/d/1UVr-cajuqjjdeMEvGHdMgQgUUXTodSYh/view?usp=sharing  ,,Megha Talukdar
+Id006, Lack of Password Complexity Requirement in Registration,"In the registration process on techshopbd.com, there is a security vulnerability where users are allowed to set passwords containing only characters, lacking complexity requirements. This can pose a significant security risk, as strong and complex passwords are essential for user account protection.",Tech Shop URL should be working,"1. Open techshopbd.com
+2. Navigate to the registration page.
+3. Enter a password containing only characters.
+4. Complete the registration process.",High,"The registration system should enforce password complexity requirements, including a combination of letters, numbers, and special characters.","User is allowed to set passwords with only characters or only number, lacking the necessary complexity for robust security.",Fail,"Chrome
+Windows 11",https://drive.google.com/file/d/1c5ZBUS4BMEsNIC6F9XwkrMoKO1qnjiqa/view?usp=sharing      https://drive.google.com/file/d/12DbIx3rIJmzVjReX7A3uE8mUCIo9x0oj/view?usp=sharing,,Megha Talukdar
+Id007,invalid email format is accepted during registration for an user,"On the registration page of techshopbd.com, there is a bug in the email field validation. The system allows users to input invalid email format, which violates the expected scenario for a standard email id format.",Tech Shop URL should be working,"1. Open techshopbd.com
+2. Navigate to the registration page.
+3. Enter a invalid mail id format by removing domain name, @ or firstname.
+4. Complete the registration process.",High,"The registration system should throw invalid format error message when user enters,invalid email id format.                                                        ""Please enter a valid email address.""","User is allowed to enter invalid email id format, lacking the necessacity of valid email id for proper verification",Fail,"Chrome
+Windows 11",https://drive.google.com/file/d/1NyWveLsQ9nKTNS-BWtlCfvA8_gPXr9IQ/view?usp=sharing,,Megha Talukdar
+Id008,"During Registration Error Message should be thrown when user enters ""mail id"" in place of ""Full Name""","On the registration page of techshopbd.com, there is a bug in the Full Name Validation field. The system allows users to input email format in place of full name. Error message is not thrown.",Tech Shop URL should be working,"1. Open techshopbd.com
+2. Navigate to the registration page.
+3. Enter a mail id in place of Ful Name.
+4. Click on SignUp Option.",High,"The registration system shouldprompt user to enter valid name when user enters, email id inplace of Full Name.                                                                                         ""Invalid Full Name: Please enter a valid full name.""","User is allowed to enter email id, in place of Full Name. Validation error message is not thrown",Fail,"Chrome
+Windows 11",https://drive.google.com/file/d/153tuL7Ypp2_FDmmc6VAy-2nW4LK5e-QJ/view?usp=sharing,,Megha Talukdar
+Id009,Special / Numeric Input Allowed in Full Name Field During Registration,"On the registration page of techshopbd.com, users are allowed to enter special character /numeric values in the Full Name field, contrary to the expected behavior.",Tech Shop URL should be working,"1. Open techshopbd.com
+2. Navigate to the registration page.                                                                                                                        3. Attempt to enter special character /numeric characters in the Full Name field.
+4. Complete the registration form and submit.",High,"The system should disallow special character /numeric input in the Full Name field during registration, prompting users with an error message if they attempt to enter numbers/special character /numeric. This issue needs to be addressed to enhance the accuracy and reliability of user data stored during the registration process.","The system allows user to enter special character /numeric input in the Full Name field during registration, and do not prompt users with an error message if they attempt to enter numbers.",Fail,"Chrome
+Windows 11",https://drive.google.com/file/d/1gzfcCHy4YGHJ0UCjwC40pIQURylFhsno/view?usp=sharing,,Megha Talukdar
